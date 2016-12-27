@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Speech-to-Tires</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="/scripts/stamp.js" type="text/javascript"></script>
+    <script src="/scripts/speech.1.0.0.js" type="text/javascript"></script>
+    <script src="/scripts/speech-service.js" type="text/javascript"></script>
+    <script src="/scripts/bing-search-service.js" type="text/javascript"></script>
+    <script src="/scripts/tire-service.js" type="text/javascript"></script>
+    <script src="/scripts/shared-state.js" type="text/javascript"></script>
+    <script src="/scripts/tire-search-params.js" type="text/javascript"></script>
+    <script src="/scripts/manufacturer-data.js" type="text/javascript"></script>
+    <script src="/scripts/numbers-to-text.js" type="text/javascript"></script>
+    <script src="/scripts/localSearch.js" type="text/javascript"></script>
+    <script src="/scripts/status.js" type="text/javascript"></script>
+    <script src="/scripts/vehicle-page.js" type="text/javascript"></script>
+    <script src="/scripts/options-page.js" type="text/javascript"></script>
+    <script src="/scripts/tires-page.js" type="text/javascript"></script>
+    <script src="/scripts/router.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="vehicle-page" class="col-md-12 page">
+                <div class="row">
+                    <h2>Vehicle</h2>
+                </div>
+                <div class="row">
+                    <img id="vehicle-mic" class="microphone" src="/images/microphone-512.png" />
+                    <ol>
+                        <li>Tap the microphone to start listening</li>
+                        <li>
+                            Say the Year, Make, and Model of your vehicle <br />
+                            (e.g. 2004 Ford Focus)
+                        </li>
+                        <li>Tap the microphone again to find vehicle options</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="options-page" class="col-md-12 page">
+                
+                <div class="row">
+                    <a class="back-button" href=""><img src="/images/arrow-92-512.png" /> Back to Vehicle</a>
+                    <h2>Options</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 id="car"></h3>
+                        <img id="car-thumbnail" src="" />
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <img id="options-mic" class="microphone" src="/images/microphone-512.png" />
+                        <ol>
+                            <li>Tap the microphone to start listening</li>
+                            <li>Say the option number to the right that matches your vehicle</li>
+                            <li>Tap the microphone again to find tires</li>
+                        </ol>
+                    </div>
+
+                    <div class="col-md-4">
+                        <ol id="options"></ol>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tires-page" class="col-md-12 page">
+                <div class="row">
+                    <a class="back-button" href=""><img src="/images/arrow-92-512.png" /> Back to Options</a>
+                    <h2>Tires</h2>
+                </div>
+                <div class="row">
+                    <div id="tires">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="status">
+            <div id="notification" class="alert alert-info"></div>
+            <div id="errors" class="alert alert-danger"></div>
+        </div>
+    </div>
+
+    <template id="tire">
+        <div class="col-md-4 tire-result">
+            <h2>{{ tireClass }}</h2>
+            <div class="col-md-4">
+                <img class="logo" src="{{ logoImagePath }}">
+                <img class="tire" src="{{ tireImagePath }}">
+            </div>
+            <div class="col-md-8">
+                <span class="product-name">{{ productName }}</span>
+                <span class="tire-description">{{ tireDescription }}</span>
+                <span class="tire-size">{{ tireSize }}</span>
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+﻿body {
+    background: url('/images/TA3.0/TireLacing_lighter_smaller.jpg') repeat;
+    color: white;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+    width: auto;
+}
+.row { overflow: hidden; }
+h2 {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 6em;
+    font-weight: bold;
+}
+.microphone {
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.back-button, .back-button:hover {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+.back-button img {
+    height: 50px;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes slide-out {
+  0% {
+        transform: translateX(0%);
+  }
+  100% {
+        transform: translateX(-100%);
+  }
+}
+.leaving-page {
+    display: block;
+    animation: slide-out 1.5s;
+}
+
+
+@keyframes slide-in {
+  0% {
+        transform: translateX(100%);
+  }
+  100% {
+        transform: translateX(0%);
+  }
+}
+.active-page 
+{ 
+    animation: slide-in 1.5s;
+    display: block;
+}
+
+
+#vehicle-page ol, #options-page ol {
+    width: 650px;
+    margin: auto;
+    font-size: 2.2em;
+}
+#options-page ol { width: auto; }
+#options-page #car-thumbnail {
+    width: 100%;
+}
+/* Tires Page */
+.tire-result {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+.tire-result h2 {
+    padding: 5px;
+    margin: 0px;
+}
+.tire-result img {
+    display: block;
+    margin-left: -15px;
+    margin-bottom: 10px
+}
+.tire-result .tire {
+    display: block;
+    height: 150px;
+}
+.tire-result .product-name {
+    font-weight: bold;
+}
+.tire-result .tire-description {
+    display: block;
+}
+div#errors, div#notification {
+    position: fixed;
+    bottom: 10px;
+    width: 98%;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}

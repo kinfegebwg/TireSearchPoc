@@ -1,0 +1,12 @@
+﻿If you say 1993 Chevy Camaro, Bing gives you 1993 Chevy Camero
+If you say 1993 Chevrolet Camaro, Bing gives you 1993 Chevrolet Camaro
+...consistently...
+It's as if it doesn't understand Chevy, but does understand Chevrolet when trying to interpret "Camero vs Camaro"
+
+
+
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/GetManufacturers?sourceDealerNumber=ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/GetYears?carManufacturer=BMW
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/GetModels?carManufacturer=BMW&carYear=2014
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/GetOptions?carManufacturer=BMW&carYear=2014&carModel=328i
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/SearchTires?searchParams=%7B%22DealerGroupId%22:%22ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0%22,%22DealerId%22:339,%22Width%22:225,%22AspRatio%22:45,%22Rim%22:18,%22LoadRating%22:%2291%22,%22SpeedRating%22:%22V%22,%22Width2%22:0,%22AspRatio2%22:0,%22Rim2%22:0,%22LoadRating2%22:null%7D

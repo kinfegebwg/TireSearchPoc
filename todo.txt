@@ -1,0 +1,21 @@
+﻿[Done] Get tire info by tire size data stored in selected option for vehicle
+[Done] Take first three AdditionalTire results and name them Good, Better, Best
+[Done] Display those
+
+# Notes from call with John
+[Done] Initiating with click is fine for now
+[Done] Make it prettier
+    [Done] Tire image is background
+    say car search
+    [Done] list options
+    [Done] change background to find image of car using bing API
+		will be fullscreen
+		take advantage of real estate
+    [Done] Jeremy Poch for pictures of tires
+
+# Feedback from Ptacek (2016-12-19)
+[Done] Make each column it's own page
+[Done] Make everything bigger (as if it was on a TV)
+[Done] Show vehicle image on Options page along with Options
+[Done] Clicking a back button is okay to get to previous pages
+[Done] Try to animate screen transitions like https://newaitp1016.jptacek.com/#/1

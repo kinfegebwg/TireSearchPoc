@@ -1,0 +1,47 @@
+﻿// Search by Vehicle
+//{
+//  "DealerGroupId": "ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0",
+//  "DealerId": 339,
+//  "Width": 225,
+//  "AspRatio": 45,
+//  "Rim": 18,
+//  "LoadRating": "91",
+//  "SpeedRating": "V",
+//  "Width2": 0,
+//  "AspRatio2": 0,
+//  "Rim2": 0,
+//  "LoadRating2": null
+//}
+
+// Search by Size
+{
+  "DealerGroupId": "ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0",
+  "DealerId": 339,
+  "Width": "235",
+  "AspRatio": "75",
+  "Rim": "16",
+  "LoadRating": "",
+  "SpeedRating": "",
+  "Width2": null,
+  "AspRatio2": null,
+  "Rim2": null,
+  "LoadRating2": "",
+  "SpeedRating2": ""
+}
+
+// Search by Vehicle
+//{
+//  "DealerGroupId": "ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0",
+//  "DealerId": 339,
+//  "Width": 245,
+//  "AspRatio": 40,
+//  "Rim": 19,
+//  "LoadRating": "98",
+//  "SpeedRating": "W",
+//  "Width2": 0,
+//  "AspRatio2": 0,
+//  "Rim2": 0,
+//  "LoadRating2": null
+//}
+
+

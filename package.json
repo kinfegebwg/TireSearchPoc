@@ -1,0 +1,9 @@
+{
+  "name": "speech-to-tires",
+  "version": "1.0.0",
+  "description": "US Venture Proof-of-concept: Searching for tires via speech",
+  "devDependencies": {
+    "bootstrap": "*",
+    "jquery": "*"
+  }
+}

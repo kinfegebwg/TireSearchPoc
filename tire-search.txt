@@ -1,0 +1,12 @@
+﻿# Search by Vehicle (API has bug and is not returning results)
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/SearchTires?searchParams=%7B%22DealerGroupId%22:%22ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0%22,%22DealerId%22:339,%22Width%22:225,%22AspRatio%22:45,%22Rim%22:18,%22LoadRating%22:%2291%22,%22SpeedRating%22:%22V%22,%22Width2%22:0,%22AspRatio2%22:0,%22Rim2%22:0,%22LoadRating2%22:null%7D
+searchParams: {"DealerGroupId":"ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0","DealerId":339,"Width":225,"AspRatio":45,"Rim":18,"LoadRating":"91","SpeedRating":"V","Width2":0,"AspRatio2":0,"Rim2":0,"LoadRating2":null}
+
+
+# Search by Size
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/SearchTires?searchParams=%7B%22DealerGroupId%22:%22ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0%22,%22DealerId%22:339,%22Width%22:%22235%22,%22AspRatio%22:%2275%22,%22Rim%22:%2216%22,%22LoadRating%22:%22%22,%22SpeedRating%22:%22%22,%22Width2%22:null,%22AspRatio2%22:null,%22Rim2%22:null,%22LoadRating2%22:%22%22,%22SpeedRating2%22:%22%22%7D
+searchParams:{"DealerGroupId":"ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0","DealerId":339,"Width":"235","AspRatio":"75","Rim":"16","LoadRating":"","SpeedRating":"","Width2":null,"AspRatio2":null,"Rim2":null,"LoadRating2":"","SpeedRating2":""}
+
+
+http://tiresanytime3dev.azurewebsites.net/api/TireSearchingApi/SearchTires?searchParams=%7B%22DealerGroupId%22:%22ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0%22,%22DealerId%22:339,%22Width%22:245,%22AspRatio%22:40,%22Rim%22:19,%22LoadRating%22:%2298%22,%22SpeedRating%22:%22W%22,%22Width2%22:0,%22AspRatio2%22:0,%22Rim2%22:0,%22LoadRating2%22:null%7D
+searchParams:{"DealerGroupId":"ADF3ABD9-0C2C-4176-A117-03EAEDDA4AB0","DealerId":339,"Width":245,"AspRatio":40,"Rim":19,"LoadRating":"98","SpeedRating":"W","Width2":0,"AspRatio2":0,"Rim2":0,"LoadRating2":null}
